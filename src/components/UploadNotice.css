@@ -1,0 +1,63 @@
+.upload-notice-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .notice-title {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notice-description-tooltip {
+    cursor: help;
+    color: #6c757d;
+  }
+  
+  .notice-description-tooltip:hover {
+    color: #495057;
+  }
+  
+  .file-type {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .file-type i {
+    font-size: 1.2rem;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .table th {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  

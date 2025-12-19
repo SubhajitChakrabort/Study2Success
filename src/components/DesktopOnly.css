@@ -1,0 +1,36 @@
+.mobile-restriction {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+  
+  .mobile-restriction .container {
+    max-width: 500px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  .mobile-restriction i {
+    color: #0d6efd;
+  }
+  
+  .mobile-restriction h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .mobile-restriction p {
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  

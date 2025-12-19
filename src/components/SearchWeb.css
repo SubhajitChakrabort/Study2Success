@@ -1,0 +1,144 @@
+.search-web-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .search-results {
+    margin-top: 2rem;
+  }
+  
+  .result-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .result-card h4 {
+    color: #0d6efd;
+    margin-bottom: 0.75rem;
+  }
+  
+  .result-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .search-tips {
+    background-color: #e9f7fe;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid #0d6efd;
+  }
+  
+  .search-tips h4 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+  }
+  
+  .search-tips ul {
+    padding-left: 1.5rem;
+  }
+  
+  .search-tips li {
+    margin-bottom: 0.5rem;
+  }
+  .search-web-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .search-results {
+    margin-top: 2rem;
+  }
+  
+  .result-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .result-card h4 {
+    color: #0d6efd;
+    margin-bottom: 0.75rem;
+  }
+  
+  .result-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .search-tips {
+    background-color: #e9f7fe;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid #0d6efd;
+  }
+  
+  .search-tips h4 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+  }
+  
+  .search-tips ul {
+    padding-left: 1.5rem;
+  }
+  
+  .search-tips li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Modal styling */
+  .modal-backdrop {
+    opacity: 0.5;
+  }
+  
+  .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  .modal-body pre {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
+  .modal-body h3 {
+    color: #0d6efd;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-body ul {
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal-body li {
+    margin-bottom: 0.5rem;
+  }
+  

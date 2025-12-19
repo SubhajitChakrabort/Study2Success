@@ -1,0 +1,437 @@
+.commission-report-container {
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.commission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.commission-header h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.commission-header h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+}
+
+.user-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-info strong {
+  color: #2c3e50;
+}
+
+.total-commission {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #28a745;
+  background: #f0fff4;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+  border-left: 4px solid #28a745;
+}
+
+.commission-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.commission-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commission-table th,
+.commission-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.commission-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+
+.commission-table tr:last-child td {
+  border-bottom: none;
+}
+
+.commission-table tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.commission-explanation {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.commission-explanation p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.commission-explanation h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #6c757d;
+  font-style: italic;
+  background: #f8f9fa;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-admin {
+  background-color: #e3f2fd;
+  color: #0d6efd;
+}
+
+.badge-teacher {
+  background-color: #fff3cd;
+  color: #ffc107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .commission-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .commission-header h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .user-info, .total-commission {
+    width: 100%;
+  }
+}
+
+/* Animation for table rows */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.commission-table tbody tr {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Alternating row colors */
+.commission-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Amount styling */
+.amount-cell {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.commission-cell {
+  font-weight: 600;
+  color: #28a745;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #6c757d;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.card-value {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+/* Print styles */
+@media print {
+  .commission-report-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .commission-table th {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+  }
+}
+/* Add these styles to your existing CSS file */
+.export-buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.export-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.export-buttons .btn:active {
+  transform: translateY(0);
+}
+
+.export-buttons .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.export-buttons .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+@media print {
+  .export-buttons {
+    display: none !important;
+  }
+}
+.commission-report-container {
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.commission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.commission-header h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.commission-header h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+}
+
+.user-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-info strong {
+  color: #2c3e50;
+}
+
+.total-commission {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #28a745;
+  background: #f0fff4;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+  border-left: 4px solid #28a745;
+}
+
+.commission-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.commission-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commission-table th,
+.commission-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.commission-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+
+.commission-table tr:last-child td {
+  border-bottom: none;
+}
+
+.commission-table tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.commission-explanation {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+.icon-bg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.text-end {
+  text-align: right;
+}
+
+@media print {
+  .btn-group, .form-group {
+    display: none !important;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* PDF specific styles */
+#pdf-content {
+  padding: 20px;
+}
+
+.report-header {
+  margin-bottom: 30px;
+}
+
+.report-footer {
+  margin-top: 50px;
+  text-align: center;
+}

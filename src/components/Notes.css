@@ -1,0 +1,82 @@
+.notes-container {
+    padding: 20px;
+}
+
+.notes-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.note-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.note-item:hover {
+    background-color: #f8f9fa;
+}
+
+.note-item h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.note-item p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.note-actions {
+    margin-top: 10px;
+}
+
+.ql-editor {
+    min-height: 200px;
+}
+
+.ql-toolbar {
+    border-radius: 4px 4px 0 0;
+}
+
+.ql-container {
+    border-radius: 0 0 4px 4px;
+}
+
+@media (max-width: 768px) {
+    .notes-container {
+        padding: 10px;
+    }
+    
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+    
+    .note-item {
+        padding: 10px;
+    }
+}
+.search-box {
+    position: relative;
+  }
+  
+  .search-box input {
+    padding-right: 40px;
+    border-radius: 8px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+  }
+  
+  .notes-list {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
